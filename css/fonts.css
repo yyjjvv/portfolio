@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*Manyo*/
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+/*Ford*/
+@font-face {
+	font-family: "DIN";
+	src: url(../fonts/DINlig.woff) format("woff"),
+		url(../fonts/DINlig.TTF) format("truetype");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "DIN";
+	src: url(../fonts/DINReg.woff) format("woff"),
+		url(../fonts/DINReg.TTF) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "DIN";
+	src: url(../fonts/DINBol.woff) format("woff"),
+		url(../fonts/DINBol.TTF) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*Naver Series*/
+@font-face {
+	font-family: "어그로체B";
+	src: url("./SB-어그로-B.woff") format("woff"),
+		url("./SB-어그로OTF-B.otf") format("opentype"),
+		url("./SB-어그로-B.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "어그로체M";
+	src: url("./SB-어그로-M.woff") format("woff"),
+		url("./SB-어그로OTF-M.otf") format("opentype"),
+		url("./SB-어그로-M.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+/*Jeep*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+/*MMCA*/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;500;700&display=swap");
+
+/*stpmj*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");

@@ -1,0 +1,148 @@
+@charset "utf-8";
+#contents {
+	padding-top: 60px;
+}
+.contact {
+	padding: 50px 0;
+}
+.contact h3 {
+	margin-bottom: 40px;
+}
+.contact .deco {
+	width: 210px;
+	height: 210px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.contact .deco img {
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+}
+.contact .txt {
+	width: fit-content;
+	margin: 0 auto;
+}
+.contact .txt .info {
+	position: relative;
+}
+.contact .txt li {
+	margin-bottom: 20px;
+	width: fit-content;
+}
+.contact .txt li .highlight {
+	position: relative;
+	cursor: pointer;
+	transform-style: preserve-3d;
+}
+.contact .txt li .highlight::before {
+	content: "";
+	display: inline-block;
+	width: 106%;
+	height: 0%;
+	position: absolute;
+	bottom: -10%;
+	left: -3%;
+	background: rgba(252, 186, 19, 0.4);
+	border-radius: 3px;
+	transition: height 0.4s;
+	cursor: pointer;
+	transform: translateZ(-1px);
+}
+.contact .txt li:last-of-type {
+	margin-bottom: 0px;
+}
+.contact .txt li .i-first {
+	margin-right: 20px;
+}
+.contact .txt li .i-last {
+	color: #777;
+	transition: color 0.4s;
+}
+.contact .txt li.small-logo {
+	width: 50px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.contact .txt li:hover .highlight::before {
+	height: 120%;
+}
+.contact .txt li:hover .i-last {
+	color: #141414;
+}
+
+@media screen and (min-width: 768px) {
+	#contents {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.contact {
+		padding: 80px 0;
+	}
+	.contact h3 {
+		margin-top: 40px;
+		margin-bottom: 60px;
+	}
+	.contact .row {
+		display: flex;
+		justify-content: center;
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contact .deco {
+		width: 300px;
+		height: 300px;
+		margin: 0px;
+		margin-bottom: 0px;
+	}
+	.contact .deco img {
+		width: 300px;
+		height: 300px;
+	}
+	.contact .txt {
+		margin: 0px;
+		padding-left: 80px;
+	}
+	.contact .txt li {
+		margin-bottom: 25px;
+	}
+	.contact .txt li .i-first {
+		margin-right: 30px;
+	}
+	.contact .txt li.small-logo {
+		width: 60px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#contents {
+		padding-top: 100px;
+		padding-bottom: 80px;
+	}
+	.contact {
+		padding: 100px 0;
+	}
+	.contact h3 {
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+	.contact .deco {
+		width: 400px;
+		height: 400px;
+	}
+	.contact .deco img {
+		width: 400px;
+		height: 400px;
+	}
+	.contact .txt {
+		padding-left: 160px;
+	}
+	.contact .txt li {
+		margin-bottom: 30px;
+	}
+	.contact .txt li.small-logo {
+		width: 65px;
+	}
+}
