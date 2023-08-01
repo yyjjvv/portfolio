@@ -1,0 +1,60 @@
+@import "../../scss/variable";
+@import "../../scss/mixin";
+// @import "../scss/extend";
+// @import "../scss/reset";
+// @import "../scss/common";
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $bg;
+    z-index: 10;
+    > ul {
+        display: flex;
+
+        > li {
+            display: flex;
+            align-items: center;
+            width: calc(100% / 3);
+            @include mq("large") {
+                width: calc(100% / 3);
+            }
+        }
+    }
+    .logo {
+        width: fit-content;
+        height: fit-content;
+        font-family: $serifFont;
+        font-size: 2.4rem;
+        a {
+            display: block;
+            padding: 1.3rem 2rem;
+            cursor: pointer;
+        }
+    }
+
+    .action-btn {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        &.active {
+            background-color: $beige1;
+        }
+        &__about,
+        &__filter {
+            padding: 1rem;
+            color: $black;
+            font-size: 2rem;
+            cursor: pointer;
+            &:hover {
+                font-family: $serifFont;
+            }
+        }
+        &__language {
+            padding: 1rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import "../../scss/variable";
+@import "../../scss/mixin";
+
+.about {
+    position: absolute;
+    // position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    padding: 2rem;
+    background-color: $beige1;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $beige2;
+    }
+    @include mq("large") {
+        top: 0;
+        width: calc(100% / 3) * 2;
+        height: 100vh;
+        padding: 1.3rem 2rem 2rem;
+    }
+    &__close {
+        position: fixed;
+        top: 0.8rem;
+        right: calc(100% / 3);
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 0.5rem;
+        padding: 1rem;
+    }
+    &__category {
+        display: flex;
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid $black;
+        }
+        &--title {
+            flex: 1;
+            min-width: 10rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            @include mq("large") {
+                font-size: 2rem;
+            }
+            &.about-logo {
+                display: none;
+                font-family: $serifFont;
+                @include mq("large") {
+                    display: block;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        &--contents {
+            flex: 2;
+            line-height: 1.5;
+            @include mq("large") {
+                font-size: 1.4rem;
+            }
+            h3 {
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+                font-weight: 300;
+                text-align: center;
+                @include mq("large") {
+                    font-size: 1.6rem;
+                }
+            }
+            span {
+                display: block;
+                font-weight: 300;
+            }
+            p {
+                @include mq("large") {
+                    width: calc(100% - 2rem);
+                }
+            }
+            p:not(:first-of-type) {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../scss/variable';
+
+#footer{
+    width: 100%;
+    // height: 50px;
+    padding: 2rem 3rem;
+    background-color: $beige1;
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+        &:first-of-type{
+            margin-bottom: 1rem;;
+        }
+    }
+}

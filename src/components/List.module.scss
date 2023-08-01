@@ -1,0 +1,48 @@
+@import "../scss/variable";
+@import "../scss/mixin";
+@import "../scss/extend";
+
+.projects__list {
+    width: 100%;
+    height: auto;
+    background-color: $bg;
+    border: .5px solid #ddd;
+    &--img {
+        position: relative;
+        div {
+            @extend %flexCenter;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            color: $black;
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 1.25;
+            word-break: keep-all;
+            // z-index: -1;
+            @include mq("medium") {
+                padding: 2rem;
+            }
+            @include mq("large") {
+                padding: 4rem;
+            }
+        }
+        img {
+            position: relative;
+            &:hover {
+                opacity: 0;
+            }
+        }
+    }
+    &--dec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        font-size: 1.4rem;
+        border-top: .5px solid #ddd;
+    }
+}

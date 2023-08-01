@@ -1,0 +1,17 @@
+@import "../scss/variable";
+@import "../scss/mixin";
+
+#main{
+    margin-top: 5rem;
+    background-color: $beige1;
+    .projects{
+        display: grid;
+        
+        @include mq('medium'){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mq('large'){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
