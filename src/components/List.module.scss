@@ -5,8 +5,7 @@
 .projects__list {
     width: 100%;
     height: auto;
-    background-color: $bg;
-    border: .5px solid #ddd;
+    background-color: $beige3;
     &--img {
         position: relative;
         div {
@@ -19,8 +18,9 @@
             padding: 4rem;
             color: $black;
             font-size: 1.4rem;
+            font-weight: 700;
             text-align: center;
-            line-height: 1.25;
+            line-height: 1.5;
             word-break: keep-all;
             // z-index: -1;
             @include mq("medium") {
@@ -28,10 +28,18 @@
             }
             @include mq("large") {
                 padding: 4rem;
+                font-size: 1.6rem;
             }
         }
         img {
             position: relative;
+            padding: 4rem;
+            @include mq("medium") {
+                padding: 2rem;
+            }
+            @include mq("large") {
+                padding: 4rem;
+            }
             &:hover {
                 opacity: 0;
             }
@@ -43,6 +51,9 @@
         align-items: center;
         padding: 2rem;
         font-size: 1.4rem;
-        border-top: .5px solid #ddd;
+        // border-top: .5px solid #ddd;
+        h3{
+            // font-weight: 700;
+        }
     }
 }

@@ -5,7 +5,7 @@
     width: 100%;
     min-height: calc(100vh - 136px);
     margin-top: 5rem;
-    border-top: 1px solid $beige2;
+    // border-top: 1px solid $beige2;
     @include mq('medium'){
         display: flex;
         height: calc(100% - 124px);
@@ -30,7 +30,7 @@
             height: calc(100vh - 124px);
             overflow-y: auto;
             padding: 5rem;
-            border-left: 1px solid $beige2;
+            // border-left: 1px solid $beige2;
         }
         @include mq('large'){
             padding: 8rem;
@@ -85,6 +85,7 @@
             }
         }
         .category__lists{
+            margin-left: 2rem;
             margin-bottom: 3rem;
             font-size: 1.3rem;
             @include mq('medium'){
