@@ -76,7 +76,7 @@ const Header = () => {
                     >
                         Filter
                     </button>
-                    <button
+                    {/* <button
                         type="button"
                         className={styles["action-btn__language"]}
                         style={
@@ -86,7 +86,7 @@ const Header = () => {
                         }
                     >
                         KO
-                    </button>
+                    </button> */}
                 </li>
             </ul>
             {openAbout && <About onClose={closeMenuHandler} />}
