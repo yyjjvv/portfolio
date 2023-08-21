@@ -5,45 +5,42 @@
     width: 100%;
     min-height: calc(100vh - 136px);
     margin-top: 5rem;
-    // border-top: 1px solid $beige2;
-    @include mq('medium'){
-        display: flex;
-        height: calc(100% - 124px);
+    @include mq("medium") {
         min-height: calc(100% - 124px);
     }
     &__img {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        @include mq('medium'){
-            width: 50%;
-            height: calc(100vh - 124px);
+        @include mq("large") {
+            height: 40vh;
         }
     }
     &__description {
         width: 100%;
         padding: 5rem 3rem;
-        @include mq('medium'){
-            width: 50%;
-            height: calc(100vh - 124px);
-            overflow-y: auto;
+        @include mq("medium") {
             padding: 5rem;
-            // border-left: 1px solid $beige2;
         }
-        @include mq('large'){
+        @include mq("large") {
+            max-width: 128rem;
+            margin: 0 auto;
             padding: 8rem;
         }
-        .title {
+        .title__wrapper {
+            display: flex;
+            align-items: center;
             margin-bottom: 2rem;
-            font-size: 1.6rem;
-            font-weight: 700;
-            @include mq('medium'){
-                // text-align: center;
-            }
-            @include mq('large'){
+            @include mq("large") {
                 margin-bottom: 3rem;
+            }
+        }
+        .title {
+            font-size: 1.6rem;
+            font-family: "NanumBarunGothicBold", sans-serif;
+            @include mq("large") {
                 font-size: 2rem;
             }
         }
@@ -51,77 +48,80 @@
             margin-bottom: 2rem;
             color: #555;
             font-size: 1.3rem;
-            @include mq('medium'){
-                // text-align: center;
-            }
-            @include mq('large'){
+            @include mq("large") {
                 margin-bottom: 3rem;
                 font-size: 1.5rem;
             }
         }
-        .category__title{
+        .category__link {
+            display: flex;
+            &__list {
+                margin-left: 2rem;
+                font-size: 1.3rem;
+                cursor: pointer;
+                svg {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .category__title {
             margin-bottom: 1rem;
             font-size: 1.3rem;
-            font-weight: 700;
-            @include mq('medium'){
-                // text-align: center;
-            }
-            @include mq('large'){
+            font-family: "NanumBarunGothicBold", sans-serif;
+            @include mq("large") {
                 margin-bottom: 2rem;
                 font-size: 1.6rem;
             }
         }
-        .category__contents{
+        .category__contents {
             margin-bottom: 3rem;
             font-size: 1.3rem;
-            @include mq('medium'){
-                display: flex;
-                flex-direction: column;
-                // align-items: center;
+            line-height: 2;
+            @include mq("medium") {
+                // display: flex;
+                // flex-direction: column;
             }
-            @include mq('large'){
+            @include mq("large") {
                 margin-bottom: 3rem;
                 font-size: 1.5rem;
             }
         }
-        .category__lists{
+        .category__lists {
             margin-left: 2rem;
             margin-bottom: 3rem;
             font-size: 1.3rem;
-            @include mq('medium'){
+            @include mq("medium") {
                 display: flex;
                 flex-direction: column;
-                // align-items: center;
             }
-            @include mq('large'){
+            @include mq("large") {
                 margin-bottom: 3rem;
                 font-size: 1.5rem;
             }
-            > li{
-                margin-left: 2rem;
+            strong {
+                font-family: "Lato", "Raleway", "Arial", "NanumBarunGothicBold",
+                    sans-serif;
                 font-weight: 700;
+            }
+            > li {
+                margin-left: 2rem;
                 list-style-type: square;
                 line-height: 2;
             }
-            ul{
+            img {
+                display: block;
+                // max-width: 90rem;
+                margin: 0 auto;
+                border: 1px solid $beige3;
+                border-radius: 1rem;
+            }
+            ul {
                 margin-bottom: 2rem;
-                li{
+                li {
                     margin-left: 4rem;
                     list-style-type: circle;
                     line-height: 1.9;
                     font-weight: 400;
-                }
-            }
-        }
-        .category__link{
-            display: flex;
-            gap: 3rem;
-            &__list{
-                // margin-bottom: 3rem;
-                font-size: 1.3rem;
-                cursor: pointer;
-                svg{
-                    margin-right: 1rem;
                 }
             }
         }

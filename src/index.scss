@@ -7,15 +7,12 @@
 @import "./scss/extend";
 @import "./scss/reset";
 @import "./scss/common";
-// @import "./scss/index";
 
-*{
-    font-family: $mainFont, $korFont;
+* {
+    font-family: "Lato", "Raleway", "Arial", "NanumBarunGothic", sans-serif;
 }
-// .korFont{
-//     font-family: $korFont;
-// }
 
-// .engFont{
-//     font-family: $mainFont;
-// }
+.font_accent {
+    font-family: "Lato", "Raleway", "Arial", "NanumBarunGothicBold", sans-serif;
+    font-weight: 700;
+}
