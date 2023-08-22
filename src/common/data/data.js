@@ -23,7 +23,7 @@ export const data = [
         description:'사용자가 지정한 위치를 기반으로 반경 2km 이내에 있는 밥 먹을 사람과 장을 보고 나눌 사람을 찾을 수 있는 서비스.',
         stack: 'React, Typescript, Vite, Redux-toolkit, Axios 등',
         color: '#ddc89d',
-        detailRoleHTML:'<li><strong>JWT 관리 및 재발급</strong><ul><li><strong>Axios Interceptor를 적용</strong>해 기존 JWT 중복 발급 오류 해결</li><li>만료 시간 체크 후 재발급 요청 & 쿠키 저장 방식 → 401 Unauthorized 에러 체크 후 재발급 요청 & 로컬스토리지 저장 방식으로 변경</li></ul></li><li><strong>사용자 맞춤 추천 게시글</strong><img src="/img/bobfriend_customList.png" alt="사용자 맞춤 추천 게시글 캡쳐" /><ul><li>메인 페이지에서 전역변수로 저장한 사용자 정보를 <strong>useSelector 훅을 사용</strong>해 불러와 <strong>로그인 유/무와 사용자 선호 태그를 체크</strong>해 맞춤 리스트 노출</li></ul></li><li><strong>게시글 필터링</strong><img src="/img/bobfriend_filterList.png" alt="게시글 태그 필터링 캡쳐" /><ul><li>탭메뉴, 검색어, 태그, 페이지네이션의 상태 관리를 통해 요청 URI 변경</li></ul></li><li><strong>주석 작성</strong><ul><li><strong>유지 보수 및 가독성 향상</strong>을 위한 주석 활용</li></ul></li><li><strong>공통 컴포넌트</strong><img src="/img/bobfriend_components.png" alt="게시글 태그 필터링 캡쳐" /><ul><li>라디오 버튼, 태그 체크박스, Alert 창 등 <strong>재사용 가능한 컴포넌트화</strong> 작업</li></ul></li><li><strong>와이어프레임, 디자인</strong><ul><li><a href="https://www.figma.com/file/Xg0rcxVl4EVjOl4N8R35xA/%EB%B0%A5%EC%B9%9C%EA%B5%AC---wireframe?type=design&node-id=44%3A216&mode=design&t=ZBxBttxETzvn1dDF-1"><em>Figma URL</em></a></li><li>서비스 전체 와이어프레임 작업</li><li>메인, 게시판 관련 페이지 디자인</li></ul></li>',
+        detailRoleHTML:'<li><strong>JWT 관리 및 재발급</strong><ul><li><strong>Axios Interceptor를 적용</strong>해 기존 JWT 중복 발급 오류 해결</li><li>만료 시간 체크 후 재발급 요청 & 쿠키 저장 방식 → 401 Unauthorized 에러 체크 후 재발급 요청 & 로컬스토리지 저장 방식으로 변경</li></ul></li><li><strong>사용자 맞춤 추천 게시글</strong><img src="/img/bobfriend_customList.png" alt="사용자 맞춤 추천 게시글 캡쳐" /><ul><li>메인 페이지에서 전역변수로 저장한 사용자 정보를 <strong>useSelector 훅을 사용</strong>해 불러와 <strong>로그인 유/무와 사용자 선호 태그를 체크</strong>해 맞춤 리스트 노출</li></ul></li><li><strong>게시글 필터링</strong><img src="/img/bobfriend_filterList.png" alt="게시글 태그 필터링 캡쳐" /><ul><li>탭메뉴, 검색어, 태그, 페이지네이션의 상태 관리를 통해 요청 URI 변경</li></ul></li><li><strong>주석 작성</strong><ul><li><strong>유지 보수 및 가독성 향상</strong>을 위한 주석 활용</li></ul></li><li><strong>공통 컴포넌트</strong><img src="/img/bobfriend_components.png" alt="컴포넌트 캡쳐" /><ul><li>라디오 버튼, 태그 체크박스, Alert 창 등 <strong>재사용 가능한 컴포넌트화</strong> 작업</li></ul></li><li><strong>와이어프레임, 디자인</strong><ul><li><a href="https://www.figma.com/file/Xg0rcxVl4EVjOl4N8R35xA/%EB%B0%A5%EC%B9%9C%EA%B5%AC---wireframe?type=design&node-id=44%3A216&mode=design&t=ZBxBttxETzvn1dDF-1"><em>Figma URL</em></a></li><li>서비스 전체 와이어프레임 작업</li><li>메인, 게시판 관련 페이지 디자인</li></ul></li>',
         detailPageHTML: '<li>메인 페이지<ul><li>(로그인 전) 서비스 소개 페이지</li><li>(로그인 후) 사용자 맞춤 추천 게시글, 카테고리 별 최신 게시글 노출</li></ul></li><li>게시판 CRUD<ul><li>게시판 페이지, 게시글 작성 페이지, 게시글 수정 페이지, 게시글 상세 페이지</li></ul></li><li>사용자 별점 체크 페이지</li>',
         url:'https://seb44-main-014.vercel.app/',
         github: 'https://github.com/codestates-seb/seb44_main_014',
@@ -41,7 +41,7 @@ export const data = [
         stack: 'React, CRA, Redux-toolkit, Axios 등',
         color: '#fd7b40',
         detailRoleHTML:'<li><strong>프론트엔드 팀장</strong></li><li><strong>Github Issues & Pull Request</strong>를 통한 프로젝트 관리</li><li>Vercel을 이용한 <strong>클라이언트 배포</strong></li><li><strong>서버 이미지 전송</strong><ul><li><strong>formData 객체</strong>를 사용해 프로필 이미지 파일과 유저 정보를 저장, <strong>Request Headers에 Content-Type을 multipart/form-data</strong>로 명시해 patch 요청</li></ul></li><li><strong>레이아웃 컴포넌트</strong><ul><li>Header, Footer, SideNavigation, ToggleNavigation</li></ul></li>',
-        detailPageHTML: '<li>메인 페이지<ul><li>(로그인 전) 서비스 소개 페이지</li><li>(로그인 후) 전체 게시물 노출</li></ul></li><li>마이페이지 CRUD<ul><li>마이페이지, 회원정보 수정 페이지</li></ul></li>',
+        detailPageHTML: '<li>메인 페이지<img src="/img/stackoverflow_beforeLogin.png" alt="로그인 전 메인페이지 캡쳐" /><ul><li>(로그인 전) 서비스 소개 페이지</li></ul><img src="/img/stackoverflow_afterLogin.png" alt="로그인 후 메인페이지 캡쳐" /><ul><li>(로그인 후) 전체 게시물 노출</li></ul></li><li>마이페이지 CRUD<img src="/img/stackoverflow_mypage.png" alt="마이페이지 캡쳐" /><ul><li>마이페이지</li></ul><img src="/img/stackoverflow_editProfile.png" alt="프로필 수정 페이지 캡쳐" /><ul><li>회원정보 수정 페이지</li></ul></li>',
         url:'https://sajotuna.vercel.app/',
         github: 'https://github.com/yyjjvv/seb44_pre_004'
     },
@@ -56,8 +56,8 @@ export const data = [
         description:'제주삼다수 앱 리뉴얼',
         stack: 'HTML, SCSS/CSS, Javascript, jQuery 등',
         color: '#f2a73f',
-        detailRoleHTML:'<li>기술 스택<ul><li>HTML, SCSS/CSS, Javascript, jQuery, Ajax, php</li></ul></li><li>공통 컴포넌트 작업<ul><li>컴스텀 달력</li><li>Input 태그, 버튼</li></ul></li><li>삼다수 고객앱 프론트 개발<ul><li>제주삼다수 클럽 가입</li><li>정기 배송 신청</li><li>주문/배송 신청</li><li>주문/배송 조회</li><li>주문 상세</li><li>배송 정보 추적</li><li>고객센터, 공지사항</li></ul></li><li>삼다수 배송기사앱 프론트 개발<ul><li>화면 배율 선택 기능</li></ul></li><li>삼다수 고객앱, 배송기사앱 프론트 UI 유지보수</li>',
-        detailPageHTML: '<li>메인 페이지<ul><li>(로그인 전) 서비스 소개 페이지 작업</li><li>(로그인 후) 사용자 맞춤 추천 게시글, 카테고리 별 최신 게시글 노출 기능</li></ul></li><li>게시판 CRUD<ul><li>게시판 페이지, 게시글 작성 페이지, 게시글 수정 페이지, 게시글 상세 페이지</li></ul></li><li>사용자 별점 체크 페이지</li>',
+        detailRoleHTML:'<li>삼다수 고객앱 <strong>프론트 개발</strong>/ 삼다수 고객앱, 배송기사앱 <strong>유지보수</strong></li><li>배송기사앱 <strong>화면 배율 선택 기능</strong><ul><li>meta 태그 viewport의 scale 변경을 통한 화면 크기 조절 기능 구현</li></ul></li><li><strong>공통 컴포넌트 작업</strong><ul><li>커스텀 달력, input 태그, 버튼 등</li></ul></li>',
+        detailPageHTML: '<li>제주삼다수 클럽 가입</li><li>정기 배송 신청</li><li>주문/배송 신청</li><li>주문/배송 조회</li><li>주문 상세</li><li>배송 정보 추적</li><li>고객센터, 공지사항</li>',
         url:'https://samdasoo.ekdp.com/',
         github:null
     },
@@ -72,8 +72,8 @@ export const data = [
         description:'파타고니아 코리아 홈페이지 리뉴얼',
         stack: 'HTML, SCSS/CSS, Javascript, jQuery 등',
         color: '#6c95ce',
-        detailRoleHTML:'<li>기술 스택<ul><li>HTML, SCSS/CSS, Javascript, jQuery, Ajax, php</li></ul></li><li>미국 본사 동일 UX/UI, 반응형 쇼핑몰 프론트 개발 및 설계<ul><li>마이페이지</li><li>주문 조회</li><li>주문 상세</li><li>주문 취소/반품</li><li>FAQ, 공지사항, 이벤트</li><li>풋프린트 관련 페이지</li><li>원웨어 관련 페이지</li><li>환경단체 관련 페이지</li><li>푸른심장 켐페인</li></ul></li>',
-        detailPageHTML: '<li>메인 페이지<ul><li>(로그인 전) 서비스 소개 페이지 작업</li><li>(로그인 후) 사용자 맞춤 추천 게시글, 카테고리 별 최신 게시글 노출 기능</li></ul></li><li>게시판 CRUD<ul><li>게시판 페이지, 게시글 작성 페이지, 게시글 수정 페이지, 게시글 상세 페이지</li></ul></li><li>사용자 별점 체크 페이지</li>',
+        detailRoleHTML:'<li>미국 본사 동일 UX/UI, <strong>반응형 쇼핑몰 프론트 개발</strong></li><li><strong>svg 애니메이션</strong>을 이용한 소재 소개 페이지 작업</li><li><strong>스크롤 이벤트 및 라이브러리를 활용</strong>한 캠페인 페이지 작업</li>',
+        detailPageHTML: '<li>마이페이지</li><li>주문 조회</li><li>주문 상세</li><li>주문 취소/반품</li><li>FAQ, 공지사항, 이벤트</li><li>풋프린트 관련 페이지</li><li>원웨어 관련 페이지</li><li>환경단체 관련 페이지</li><li>푸른심장 켐페인</li>',
         url:'https://www.patagonia.co.kr/',
         github: null
     }
