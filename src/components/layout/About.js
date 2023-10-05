@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, /* faLinkedin */ } from "@fortawesome/free-brands-svg-icons";
 import styles from "./About.module.scss";
 
 const About = ({ onClose }) => {
@@ -148,7 +148,7 @@ const About = ({ onClose }) => {
                             &nbsp; +82 (0)10 4065 7089 &nbsp;
                         </a>
                     </p>
-                    <p>
+                    {/* <p>
                         <a
                             href="https://www.linkedin.com/in/jiwonyoo/"
                             target="_blank"
@@ -157,7 +157,7 @@ const About = ({ onClose }) => {
                             <FontAwesomeIcon icon={faLinkedin} />
                             &nbsp; LinkedIn
                         </a>
-                    </p>
+                    </p> */}
                     <p>
                         <a
                             href="https://github.com/yyjjvv"
